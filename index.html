@@ -3,54 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title><strong>MOTOR ENGINEERING STUDENTS ARE MY BLOOD AND SO I LOVE ALL OF YOU</strong></title>
+  <title>MOTOR ENGINEERING STUDENTS ARE MY BLOOD AND SO I LOVE ALL OF YOU</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: url('a.jpg');
+      padding: 0;
+    }
 
-      overflow: hidden;
-      font-family: 'Segoe UI', sans-serif;
-      color:red;
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background: url('a.png') no-repeat center center fixed;
+      background-size: cover;
+      line-height: 1.6;
+      color: white;
       text-align: center;
+    }
+
+    h1, h2 {
+      background-color: rgba(253, 249, 249, 0.966);
+      padding: 10px;
+      margin-bottom: 20px;
     }
 
     h1 {
       margin-top: 20vh;
       font-size: 3em;
+      color: rgb(4, 43, 10);
       animation: fadeIn 3s ease-in-out;
-      background-color: rgb(7, 7, 7);
     }
 
     h2 {
       font-size: 2em;
+      color: red;
       animation: fadeIn 5s ease-in-out;
-      background-color: rgb(7, 7, 7);
+    }
+
+    .video {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    video {
+      max-width: 90%;
+      height: auto;
+      border: 3px solid white;
+      border-radius: 10px;
     }
 
     @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(-20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-
-    
-
-    audio {
-      position: fixed;
-      bottom: 200px;
-      left: 50px;
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <h1><b>MOTOR COMUNITY WITH IN A LOVE I INVITE YOU THIS VIDEO AND SO BE RELAX </b></h1>
-  <h2> ❤️❤️🌹🌹❤️❤️❤️💚🌹🌹  your friend sileshi.</h2>
+  <h1><b>MOTOR COMMUNITY WITH LOVE — I INVITE YOU TO RELAX AND WATCH THIS VIDEO</b></h1>
+  <h2>❤️❤️🌹🌹❤️❤️❤️💚🌹🌹 Your friend, Sileshi.</h2>
 
-  <video controls autoplay loop>
-    <source src="worku.mp4" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </video>
-
-  
+  <div class="video">
+    <video controls autoplay loop>
+      <source src="worku.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </body>
 </html>
